@@ -494,7 +494,7 @@ img,
 	float:left;
 	width:30.8%; 
 	height:350px; 
-	background-image:url('d:/Изображения/ja camping/header.png'); 
+	background-image:url('/img/header.png'); 
 	background-repeat: no-repeat; 
 	background-position:center top;
 }
