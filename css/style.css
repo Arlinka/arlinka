@@ -7,6 +7,8 @@ body {
 	font-family: Open Sans;
 }
 
+@import url("/font-awesome.min.css");
+
 a {
 	color:#666666;
 	text-decoration: none;
@@ -42,9 +44,12 @@ strong, b {
 	color:#474747;
 }
 
+i {
+font-family: fontawesome !important;
+}
+
 em, i {
 	font-style:italic;
-	
 	color: #363636;
 }
 
