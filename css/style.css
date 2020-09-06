@@ -44,11 +44,14 @@ strong, b {
 }
 
 
-em, i {
+em {
 	font-style:italic;
 	color: #363636;
 }
 
+i {
+	color: #363636;
+}
 
 body,
 a {
