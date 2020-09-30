@@ -24,7 +24,7 @@
       array [i] = keys[i]
 
       const cycleSort = array => {
-  // Последний элемент уже на месте
+  // Проходим по массиву в поиске циклических круговоротов
   for (let cycleStart = 0; cycleStart < array.length-1; cycleStart++) {
     let item = array[cycleStart]
 
@@ -43,15 +43,15 @@
     array[pos] = item // TODO: Write
     item = swap
 
-    // rotate the rest of the cycle
+    // Циклический круговорот продолжается до тех пор, пока на текущей позиции не окажется её элемент
     while (pos != cycleStart) {
-      // find where to put the item
+      // Ищем, куда переместить элемент
       pos = cycleStart
       for (let i = cycleStart + 1; i < array.length; i++) {
         if (array[i] < item) pos += 1
       }
 
-      // put the item there or right after any duplicates
+      // Помещаем элемент на своё место или сразу после его дубликатов
       while (item == array[pos]) {
         pos += 1
       }
@@ -73,7 +73,7 @@
     <script>
         
      for (i = 0; i < keys.length; i++)   {
-        console.log(dict[keys[i]]+ " " + array[i] + " лет");
+        //console.log(dict[keys[i]]+ " " + array[i] + " лет");
       document.write(dict[keys[i]]+ " "+ "<b>" + array[i]+ "</b>" + " лет <br>");}
     
   </script></script>
